@@ -13,7 +13,6 @@ public class ShowError extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// Set error code and reasson.
 		response.sendError(407, "Need Authentication!!!");
-
 	}
 	
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
