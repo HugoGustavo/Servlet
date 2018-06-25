@@ -19,8 +19,6 @@ public class DatabaseAccess extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// JBDC drive name and database URL
-		final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
 		final String DB_URL = "jdbc:mysql://localhost/test";
 		
 		// Databsae credentials
