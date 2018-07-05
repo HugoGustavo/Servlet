@@ -9,8 +9,16 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
+import javax.servlet.annotation.WebInitParam;
 
-@WebFilter("/*")
+@WebFilter(
+		urlPatterns = {"/*"},
+		initParams = {
+				@WebInitParam(
+						name = "test-param",
+						value = "Initialization Paramter"
+						)
+		})
 public class LogFilter implements Filter {
 
 	@Override
